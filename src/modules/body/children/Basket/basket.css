@@ -1,15 +1,20 @@
-.basket {
+.basket,
+.basket__roof {
   max-width: 1200px;
   width: 100%;
-  height: 50px;
-
   margin: 10px auto;
-  background: #ad66d5;
+  height: 50px;
 
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
 
+.basket__roof {
+  position: fixed;
+  z-index: 1;
+
+  background: #ad66d5;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }

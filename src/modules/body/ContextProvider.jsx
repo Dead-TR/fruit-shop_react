@@ -29,7 +29,10 @@ export const ContextProvider = ({ children }) => {
       promo: [3, 0.5],
     },
   ];
-  const basket = new Set();
+  const basket = {
+    names: new Set(),
+    list: {},
+  };
 
   return (
     <Context.Provider value={[products, basket]}>

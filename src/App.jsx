@@ -1,7 +1,7 @@
 import React from 'react';
-import { ContextProvider } from './modules/body/ContextProvider';
-import { ProductList } from './modules/body/children/ProductList/ProductList';
-import { Basket } from './modules/body/children/Basket/Basket';
+import { ContextProvider } from './modules/components/ContextProvider';
+import { ProductList } from './modules/components/children/ProductList/ProductList';
+import { Basket } from './modules/components/children/Basket/Basket';
 
 function App() {
   return (

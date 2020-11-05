@@ -1,5 +1,5 @@
 # «Fruit-Shop»
-  - [Preview](https://)
+  - [Preview](https://dead-tr.github.io/fruit-shop_react/)
 
 ## Technologies:
   - HTML

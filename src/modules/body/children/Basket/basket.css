@@ -1,0 +1,50 @@
+.basket {
+  max-width: 1200px;
+  width: 100%;
+  height: 50px;
+
+  margin: 10px auto;
+  background: #ad66d5;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.basket__item {
+  max-height: 40px;
+  margin: 0 40px;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.basket__item:hover {
+  transform: scale(1.1);
+}
+
+.basket__button {
+  background: transparent;
+  border: none;
+  cursor: default;
+}
+
+.basket__menu {
+  max-width: 1200px;
+  width: 100%;
+  margin: 10px auto;
+
+  position: absolute;
+  z-index: 1;
+  height: calc(100% - 80px);
+  background: #992667;
+  top: -100%;
+  box-shadow: 0 6px 10px 10px rgba(0,0,0,0.6);
+  transition: transform 1s;
+}
+
+.basket__menu_active {
+  transform: translateY(calc(100% + 140px));
+}

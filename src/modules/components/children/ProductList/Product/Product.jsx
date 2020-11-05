@@ -30,9 +30,11 @@ export const Product = ({ name, price, img, promo }) => {
       && (amount + 1) % promo[0] === 0
     ) {
       setTotal(total + (price * promo[1]));
-    } else {
-      setTotal(total + price);
+
+      return;
     }
+
+    setTotal(total + price);
   };
 
   const removeFromBasket = () => {
@@ -47,9 +49,11 @@ export const Product = ({ name, price, img, promo }) => {
       }
 
       setAmount(amount - 1);
-    } else {
-      basket.names.delete(name);
+
+      return;
     }
+
+    basket.names.delete(name);
   };
 
   return (
